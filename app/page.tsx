@@ -15,7 +15,7 @@ export default async function Home() {
   const { data, error } = await fetchdata();
 
   if (error) {
-    <h1 className='text-9xl'>There is an error</h1>;
+    return <h1 className='text-9xl'>There is an error</h1>;
   }
 
   return (
